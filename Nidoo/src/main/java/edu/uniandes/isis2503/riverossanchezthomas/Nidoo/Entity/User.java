@@ -4,14 +4,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
 import javax.validation.constraints.NotNull;
 
+
 @Entity
-public class User {
+@Inheritance
+public abstract class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private long id;
 	
 	@NotNull
 	private String name;
@@ -27,7 +30,7 @@ public class User {
 	
 	public User() {}
 	
-	public User(Integer id) {
+	public User(long id) {
 		this.id = id;
 	}
 
@@ -40,11 +43,11 @@ public class User {
 		this.email = email;
 	}
 
-	public Integer getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
