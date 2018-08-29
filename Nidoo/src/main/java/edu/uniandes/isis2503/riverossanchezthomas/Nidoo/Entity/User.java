@@ -1,16 +1,18 @@
 package edu.uniandes.isis2503.riverossanchezthomas.Nidoo.Entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.validation.constraints.NotNull;
 
 
 @Entity
-@Inheritance
-public abstract class User {
+@Inheritance(strategy = InheritanceType.JOINED)
+public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +28,9 @@ public abstract class User {
 	private String nickName;
 
 	@NotNull
+	@Column(unique = true)
 	private String email;
+	
 	
 	public User() {}
 	

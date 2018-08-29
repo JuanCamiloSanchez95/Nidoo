@@ -13,5 +13,6 @@ public interface UserBaseDAO<T extends User> extends CrudRepository<T, Long>{
 	
 	@Query("select u from  #{#entityName} u where u.id = ?1")
 	public User findByID(long id);
+
 	
 }

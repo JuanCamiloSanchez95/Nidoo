@@ -5,6 +5,8 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 public class ParkingProvider extends User {
+	
+	private int accountNumber;
 
 	public ParkingProvider() {	}
 
@@ -13,8 +15,17 @@ public class ParkingProvider extends User {
 	}
 
 	public ParkingProvider(@NotNull String name, @NotNull String password, @NotNull String nickName,
-			@NotNull String email) {
+			@NotNull String email, int accountNumber) {
 		super(name, password, nickName, email);
+		this.accountNumber = accountNumber;
+	}
+
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
 	}
 
 }
