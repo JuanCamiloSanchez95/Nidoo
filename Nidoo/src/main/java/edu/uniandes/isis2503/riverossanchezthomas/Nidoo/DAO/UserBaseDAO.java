@@ -12,7 +12,7 @@ public interface UserBaseDAO<T extends User> extends CrudRepository<T, Long>{
 	public User findByEmail(String email);
 	
 	@Query("select u from  #{#entityName} u where u.id = ?1")
-	public User findByID(long id);
+	public User findUserByID(long id);
 
 	
 }
