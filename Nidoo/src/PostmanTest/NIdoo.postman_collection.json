@@ -1,0 +1,515 @@
+{
+	"info": {
+		"_postman_id": "8765ade4-adaa-4a61-961c-f8bb8b3cb8e7",
+		"name": "NIdoo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"description": "",
+			"item": [
+				{
+					"name": "ParkingConsumer",
+					"description": "",
+					"item": [
+						{
+							"name": "CreateParkingConsumer",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\",\n  \"creditCard\": \"1234234233\"\n}"
+								},
+								"url": "http://localhost:8080/parkingconsumers/create"
+							},
+							"response": []
+						},
+						{
+							"name": "GetIDParkingConsumer",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\"\n  \n}"
+								},
+								"url": "http://localhost:8080/users/getbyid/1"
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateParkingConsumerUser",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\":\"1\",\n  \"name\":\"thomas\",\n  \"password\": \"LOL\",\n  \"nickName\":\"Man\",\n  \"email\":\"SA@gotmail.com\",\n  \"creditCard\": \"0987654321\"\n}"
+								},
+								"url": "http://localhost:8080/parkingconsumers/update/"
+							},
+							"response": []
+						},
+						{
+							"name": "GetIDParkingProvider",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\"\n  \n}"
+								},
+								"url": "http://localhost:8080/users/getbyid/1"
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteParkingConsumer",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": "http://localhost:8080/parkingconsumers/delete/1"
+							},
+							"response": []
+						},
+						{
+							"name": "GetIDParkingConsumerDelete",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\"\n  \n}"
+								},
+								"url": "http://localhost:8080/users/getbyid/1"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "ParkingProvider",
+					"description": "",
+					"item": [
+						{
+							"name": "CreateParkingProvider",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"juan\",\n  \"password\": \"456\",\n  \"nickName\":\"Lolero\",\n  \"email\":\"sanchez@gmail.com\",\n  \"accountNumber\":\"567890\"\n}"
+								},
+								"url": "http://localhost:8080/parkingproviders/create"
+							},
+							"response": []
+						},
+						{
+							"name": "GetIDParkingConsumerChange",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\"\n  \n}"
+								},
+								"url": "http://localhost:8080/users/getbyid/2"
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateParkingProviderUser",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\":\"2\",\n  \"name\":\"thomas\",\n  \"password\": \"DOTA\",\n  \"nickName\":\"Men\",\n  \"email\":\"TA@gotmail.com\",\n  \"accountNumber\": \"0987654321\"\n}"
+								},
+								"url": "http://localhost:8080/parkingproviders/update"
+							},
+							"response": []
+						},
+						{
+							"name": "GetIDParkingProviderChange",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\"\n  \n}"
+								},
+								"url": "http://localhost:8080/users/getbyid/2"
+							},
+							"response": []
+						},
+						{
+							"name": "DeleteParkingPorvider",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": "http://localhost:8080/parkingproviders/delete/2"
+							},
+							"response": []
+						},
+						{
+							"name": "GetIDParkingProviderDelete",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\"\n  \n}"
+								},
+								"url": "http://localhost:8080/users/getbyid/2"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Createuserid3",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\":\"diego\",\n  \"password\": \"123\",\n  \"nickName\":\"Arcadia\",\n  \"email\":\"df.riveros11@gmail.com\",\n  \"creditCard\": \"1234234233\"\n}"
+						},
+						"url": "http://localhost:8080/parkingconsumers/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Createuserid4",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\":\"juan\",\n  \"password\": \"456\",\n  \"nickName\":\"Lolero\",\n  \"email\":\"sanchez@gmail.com\",\n  \"accountNumber\":\"567890\"\n}"
+						},
+						"url": "http://localhost:8080/parkingproviders/create"
+					},
+					"response": []
+				},
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\":\"juan\",\n  \"password\": \"456\",\n  \"nickName\":\"Lolero\",\n  \"email\":\"sanchez@gmail.com\",\n  \"accountNumber\":\"567890\"\n}"
+						},
+						"url": "http://localhost:8080/users/all"
+					},
+					"response": []
+				},
+				{
+					"name": "getallparkingproviders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\":\"juan\",\n  \"password\": \"456\",\n  \"nickName\":\"Lolero\",\n  \"email\":\"sanchez@gmail.com\",\n  \"accountNumber\":\"567890\"\n}"
+						},
+						"url": "http://localhost:8080/parkingconsumers/allparkingconsumers"
+					},
+					"response": []
+				},
+				{
+					"name": "getallParkingConsumer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\":\"juan\",\n  \"password\": \"456\",\n  \"nickName\":\"Lolero\",\n  \"email\":\"sanchez@gmail.com\",\n  \"accountNumber\":\"567890\"\n}"
+						},
+						"url": "http://localhost:8080/parkingproviders/allparkingproviders"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleteuser3",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:8080/parkingconsumers/delete/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleteiuser4",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:8080/parkingproviders/delete/4"
+					},
+					"response": []
+				},
+				{
+					"name": "getalldelete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\":\"juan\",\n  \"password\": \"456\",\n  \"nickName\":\"Lolero\",\n  \"email\":\"sanchez@gmail.com\",\n  \"accountNumber\":\"567890\"\n}"
+						},
+						"url": "http://localhost:8080/users/all"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle",
+			"description": "",
+			"item": [
+				{
+					"name": "CreateVehicle",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lincensePlate\":\"Kit001\",\n\t\"carModel\":\"Ferrari01\",\n\t\"carBrand\":\"Ferrari\"\n\t\n}"
+						},
+						"url": "http://localhost:8080/vehicles/create"
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": "http://localhost:8080/vehicles/getbyid/1"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateVehicle",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":\"1\",\n\t\"lincensePlate\":\"Kit013\",\n\t\"carModel\":\"Ferrari13\",\n\t\"carBrand\":\"Ferrari\"\n}"
+						},
+						"url": "http://localhost:8080/vehicles/update"
+					},
+					"response": []
+				},
+				{
+					"name": "CreateVehicle2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"lincensePlate\":\"ARC001\",\n\t\"carModel\":\"Ferrari01\",\n\t\"carBrand\":\"Ferrari\"\n\t\n}"
+						},
+						"url": "http://localhost:8080/vehicles/create"
+					},
+					"response": []
+				},
+				{
+					"name": "getVehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": "http://localhost:8080/vehicles/allvehicles"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteVehicle1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:8080/vehicles/delete/1"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteVehicle2",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": "http://localhost:8080/vehicles/delete/2"
+					},
+					"response": []
+				},
+				{
+					"name": "getVehiclesDelete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": "http://localhost:8080/vehicles/allvehicles"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
